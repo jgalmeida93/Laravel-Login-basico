@@ -20,5 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/produtos', 'ProdutoControlador@index');
+        // ou da seguinte forma:
         // ->middleware('auth')
         // ->name('produtos');
