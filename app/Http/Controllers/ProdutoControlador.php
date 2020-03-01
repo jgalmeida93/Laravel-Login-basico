@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class ProdutoControlador extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index() {
         echo '<h4>Lista de produtos</h4>';
         echo '<ul>';
