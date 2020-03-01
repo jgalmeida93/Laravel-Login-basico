@@ -23,3 +23,5 @@ Route::get('/produtos', 'ProdutoControlador@index');
         // ou da seguinte forma:
         // ->middleware('auth')
         // ->name('produtos');
+
+Route::get('/departamentos', 'DepartamentoControlador@index');
